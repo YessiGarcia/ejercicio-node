@@ -7,5 +7,5 @@ app.get("/", function(req, res){
 });
 app.listen(8080);
 
-app.use("static", express.static(path.join(__dirname, "node_modules")));
-app.use("static", express.static(path.join(__dirname, "assets")));
+app.use("/static", express.static(path.join(__dirname, "node_modules")));
+app.use("/static", express.static(path.join(__dirname, "assets")));
